@@ -1,0 +1,107 @@
+<div>
+  <p>Did You Know?</p>
+  <p><span>[X%]</span>of patients in <span>[location]</span>have access to XYZ with no disadvantage to compipters.</p>
+</div>
+
+
+<div>
+  <h3>This includes patients Covered by:</h3>
+</div>
+<div class="form-group row">
+  <table class="table" style="width: 100%;">
+    <thead>
+      <tr>
+        <td>PLANNAME</td>
+        <td class="right">COVERAGE</td>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{student.Planname}}</td>
+        <td>{{student.Covered}}</td>
+
+      </tr>
+    </tbody>
+
+  </table>
+</div>
+<div>
+  <button type="button" class="btn" (click)="next()" value="next">Next</button>
+</div>
+
+
+<div fxLayout="row" fxLayout.xs="column">
+  <div class="video" fxFlex=75>
+    <iframe width="746" height="251" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+  </div>
+</div>
+<br>
+<div>
+  <div class="card" style=" ">
+    <div class="card-body">
+      <div class="card">
+      <h6 class="medical">Medical and Pharmacy</h6>
+      <h6 class="cost">Estimate Cost</h6><br>
+      <div>
+        <i class="fa fa-calculator" aria-hidden="true"></i>
+        <span>Calculate the estimated annual incremental costs</span>
+      </div><br>
+      <div fxLayout="row" fxLayout.xs="column">
+        <div fxFLex="60" class="cost-population ">
+          <div class="card caluculator" style="width: 30%;">
+            <input type="text" class="form-control" id="_txt6" />
+            <h6 class="population">Adult Population at your Organisation</h6><br>
+            <div>
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <!-- </div>
+      <div> -->
+              <input type="text" class="form-control" id="_txt6" />
+              <h6 class="prevelence">Prevelence of AF</h6>
+            </div>
+            <div class="inner">
+              <input type="text" class="form-control " id="_txt6"
+                style="border-color: aliceblue; height: 70px;border-radius: 1px; " />
+            </div>
+            <div>
+              <i class="fa fa-times" aria-hidden="true"></i><br>
+              <div>
+                <input type="text" class="form-control" id="_txt6" />
+                <input type="text" class="form-control " id="_txt6" style="border-color: aliceblue;" style="border-color: aliceblue;
+          margin-left: 12rem;
+          margin-top: -2.5rem;
+          height: 58px;
+    border-radius: 1px;" />
+                <div>
+                  <h6>Input for Patient cost</h6>
+                  <input type="text" class="form-control " id="_txt6" style="border-color: aliceblue;" style="border-color: aliceblue;
+              width: 70%;
+          height: 90px;
+    border-radius: 1px;" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="column" fxLayout.xs="column">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <input type="text" class="form-control " id="_txt6" style="border-color: aliceblue;" style="border-color: aliceblue;
+        width: 40%;
+        height: 90px;
+        border-radius: 4px;
+        margin-left: 28rem;
+        margin-top: -20rem;
+         border-color: darkorchid;" />
+      </div>
+    </div>
+  
+  
+  
+  </div>
+</div>
+</div>
